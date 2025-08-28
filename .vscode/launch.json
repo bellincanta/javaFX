@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ExStageScene",
+            "request": "launch",
+            "mainClass": "ExStageScene",
+            "projectName": "javaFX_bcf152e1",
+            "vmArgs": "--module-path /Users/nelsonbellincanta/Documents/IFPR/Disciplinas_2025/TADS/POO/2025POO/Aulas/javaFX/aula01/lib --add-modules javafx.controls,javafx.fxml",
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "hellofx.Main",
+            "projectName": "javaFX_bcf152e1",
+            "vmArgs": "--module-path /Users/nelsonbellincanta/Documents/IFPR/Disciplinas_2025/TADS/POO/2025POO/Aulas/javaFX/aula01/lib --add-modules javafx.controls,javafx.fxml",
+        }
+    ]
+}
