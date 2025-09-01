@@ -160,3 +160,18 @@
 - **Limite de caracteres:** é possível limitar a quantidade de caracteres usando *listeners* de texto (por exemplo, ouvindo mudanças na propriedade `textProperty()`);
 - **Interatividade:** ambos podem reagir a eventos de teclado (pressionar teclas, inserção de texto) e são comumente usados na captura de dados.
 
+## CheckBox e RadioButton em JavaFX
+
+### CheckBox
+- Representa uma caixa de seleção **independente**;
+- O usuário pode **selecionar ou desmarcar** várias opções simultaneamente;
+- Ideal quando **várias opções** podem ser escolhidas;
+
+### RadioButton
+- Usado quando **apenas uma opção** pode ser selecionada **dentro de um grupo** de opções;
+- Para funcionar corretamente, os `RadioButton`s devem ser **agrupados** usando um `ToggleGroup`;
+- Útil quando o usuário deve **escolher uma única opção** entre várias;
+
+### ToggleGroup
+- Um `ToggleGroup` é usado para **agrupar** `RadioButton`s, garantindo que **apenas uma opção** dentro do grupo possa ser selecionada por vez;
+- Todos os `RadioButton`s dentro de um `ToggleGroup` se comportam como uma **escolha única** (ou seja, **só pode haver um selecionado** ao mesmo tempo);
