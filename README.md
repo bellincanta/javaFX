@@ -175,3 +175,56 @@
 ### ToggleGroup
 - Um `ToggleGroup` é usado para **agrupar** `RadioButton`s, garantindo que **apenas uma opção** dentro do grupo possa ser selecionada por vez;
 - Todos os `RadioButton`s dentro de um `ToggleGroup` se comportam como uma **escolha única** (ou seja, **só pode haver um selecionado** ao mesmo tempo);
+---
+
+## Eventos em JavaFx
+
+● O que são eventos em JavaFX?
+○ Eventos são ações realizadas pelo usuário ou pelo sistema que a aplicação pode "ouvir" e responder;
+
+● Exemplos de eventos:
+○ Clique de botão: Quando um botão é pressionado pelo usuário;
+○ Movimento do mouse: O movimento ou clique do mouse em uma área da interface;
+○ Teclado: Pressionamento de uma tecla ou combinação de teclas;
+○ Mudança de foco: Quando um campo de texto ganha ou perde foco;
+○ Cada evento gera um objeto de evento que contém informações sobre a ação realizada;
+
+● Modelo de eventos em JavaFX segue o padrão Delegação de Eventos, onde o evento é capturado e encaminhado para o manipulador correto:
+○ Origem do evento: O componente que gera o evento, como um botão;
+○ Objeto de evento: A informação sobre o evento (ex.: MouseEvent, ActionEvent);
+○ Listener/Handler (Manipulador de Evento): Um bloco de código que responde ao evento;
+
+● Event Handling (Manipulação de Eventos):
+○ O listener ou handler é associado ao componente (ex.: botão) que deseja capturar o evento;
+○ Quando o evento ocorre, o listener é chamado para executar o código associado;
+
+
+## Eventos de Clique em JavaFX
+
+● Eventos de clique são capturados quando o usuário interage com um botão, pressionando-o e soltando-o;
+● O evento mais comum é o ActionEvent, que é gerado ao clicar em um botão;
+● Para lidar com eventos de clique, usamos event handlers ou listeners, que são blocos de código associados ao componente (botão);
+
+● Passos para Capturar um Evento de Clique:
+○ Criar o componente interativo (ex.: Button);
+○ Adicionar um EventHandler usando o método setOnAction() do botão;
+○ Implementar o código que deve ser executado quando o evento de clique ocorre;
+
+
+## Eventos de Teclado e Mouse em JavaFX
+
+● Eventos de Teclado:
+○ Capturam ações do usuário relacionadas ao teclado, como pressionar, soltar ou digitar uma tecla;
+
+● Principais eventos:
+○ KeyPressed: Quando uma tecla é pressionada;
+○ KeyReleased: Quando uma tecla é liberada;
+○ KeyTyped: Quando uma tecla é digitada (geralmente usado para texto);
+
+● Eventos de Mouse:
+○ Capturam interações do usuário com o mouse, como movimento e cliques;
+
+● Principais eventos:
+○ MouseClicked: Quando o mouse é clicado;
+○ MouseMoved: Quando o mouse é movido;
+○ MouseEntered/MouseExited: Quando o ponteiro do mouse entra ou sai de um componente;
