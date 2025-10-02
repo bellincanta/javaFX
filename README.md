@@ -17,16 +17,6 @@
 ## Como instalar e executar o JavaFX
 
 - Documentação oficial de instalação: <https://openjfx.io/openjfx-docs/>.
-- Baixe o JavaFX no site oficial e **extraia** os arquivos para uma pasta.
-- Abra o **VS Code** e crie uma pasta para o projeto.
-- Acesse **Help → Show All Commands → Create Java Project**, e selecione **No build tools**.
-- Selecione a pasta pai (pasta do projeto) e nomeie o projeto, por exemplo: `HelloWorldFX`.
-- Em **Java Projects**, adicione os arquivos do JavaFX em **Referenced Libraries**.
-- Delete o arquivo criado automaticamente com o nome de `App.java`.
-- Crie uma pasta com o nome do projeto em `src/`, exemplo: `helloworldfx/`.
-- Adicione os arquivos **Main**, **FXML** e **Controller** (conforme a documentação).
-- Na aba **Run and Debug** do VS Code, selecione a opção **Create JSON file**.
-- Configure o valor de **vmArgs** no `launch.json`, conforme a documentação indica.
 
 ---
 
@@ -313,9 +303,3 @@
 - Permite desenhar **formas**, **imagens** e **texto**.
 
 ---
-
-## Animações no JavaFX
-- Suporte robusto para **animações** (interações dinâmicas).
-- Úteis para mover objetos, alterar opacidade, rotação, escala, etc.
-- `Timeline` é a classe principal para animações simples.
-- Baseia-se em modificar propriedades ao longo do tempo, com **`KeyFrame`** representando pontos temporais específicos.
